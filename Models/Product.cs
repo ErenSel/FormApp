@@ -1,14 +1,23 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace FormsApp.Models
 {
     public class Product
     {
+        [Display(Name = "ID")]
         public int ProductId { get; set; }
+        [Display(Name = "Ürün Adı")]
+        [Required(ErrorMessage = "Ürün adı zorunludur.")]
         public string Name { get; set; } = string.Empty;
+        [Display(Name = "Fiyat")]
         public decimal Price { get; set; }
 
+        [Display(Name = "Resim")]
         public string Image { get; set; } = string.Empty;
 
+        [Display(Name = "Aktif")]
         public bool IsActive { get; set; }
+        [Display(Name = "Kategori ID")]
         public int CategoryId { get; set; }
     }
 }
