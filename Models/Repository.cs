@@ -29,6 +29,12 @@ namespace FormsApp.Models
                 return _products;
             }
         }
+
+        public static void CreateProduct(Product product)
+        {
+            product.ProductId = _products.Count + 1;
+            _products.Add(product);
+        }
         public static List<Category> Categories
         {
             get

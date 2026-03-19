@@ -8,12 +8,15 @@ namespace FormsApp.Models
         public int ProductId { get; set; }
         [Display(Name = "Ürün Adı")]
         [Required(ErrorMessage = "Ürün adı zorunludur.")]
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
         [Display(Name = "Fiyat")]
-        public decimal Price { get; set; }
+        [Required(ErrorMessage = "Ürün Fiyatı zorunludur.")]
+        [Range(0, 100000, ErrorMessage = "Fiyat 0 ile 100000 arasında olmalı")]
+        public decimal? Price { get; set; }
 
         [Display(Name = "Resim")]
-        public string Image { get; set; } = string.Empty;
+        [Required(ErrorMessage = "Ürün Resmi zorunludur.")]
+        public string? Image { get; set; }
 
         [Display(Name = "Aktif")]
         public bool IsActive { get; set; }
