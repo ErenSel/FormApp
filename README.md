@@ -19,7 +19,7 @@ FormApp is a simple and practical application designed to create, manage, and pr
 1. Clone the repository:
    ```bash
    git clone https://github.com/ErenSel/FormApp.git
-    ```
+   ```
 2. Navigate to the project folder:
   ```bash
   cd FormApp
@@ -32,7 +32,7 @@ FormApp is a simple and practical application designed to create, manage, and pr
 4. Run the application:
    ```bash
    dotnet run
-    ```
+   ```
 
 Purpose
 This project was built to practice and demonstrate form-based application development with a simple and maintainable structure.
